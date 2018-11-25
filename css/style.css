@@ -1,0 +1,49 @@
+
+/* styles */
+.bigger_font {
+  font-size: 24px;
+}
+.center_font {
+  text-align: center;
+}
+ul {
+  list-style-type: square;
+}
+
+/* pages */
+#page1 {
+  display: block;
+}
+#page2 {
+  display: none;
+}
+#page3 {
+  display: none;
+}
+#page4 {
+  display: none;
+}
+#page5 {
+  display: none;
+}
+
+/* yes/no popups */
+#emergency_info_yes, #emergency_info_no {
+  display: none;
+}
+#monthly_expenses_info_yes, #monthly_expenses_info_no{
+  display: none;
+}
+#company_accounts_yes, #company_accounts_no{
+  display: none;
+}
+
+#title_container {
+  text-align: center;
+  margin-top: 60px;
+}
+#title {
+  width: 300px;
+  display: inline-block;
+  text-align: left;
+}
