@@ -1,2 +1,2 @@
 # financialindependence
-My site on financial independence 
+My site on financial independence

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>First Steps to Financial Independence</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="favicon.ico">
+
+</head>
+
+<body>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div id="title_container">
+        <img src="images/logo.png" alt="First Steps to Financial Independence" width="170" height="170">
+        <div id="title">
+          <h1>First Steps to Financial Independence</h1>
+        </div>
+      </div>
+      <div class="one-half column" style="margin-top: 30px">
+        <div id="page1">
+
+          <h2>First Steps</h2>
+          <p>Do you have an emergency fund?</p>
+          <p>
+            <form action="">
+              <input onclick="show_emergency_info()" id="emergency_fund" type="radio" name="emergency_fund" value="true"> Yes<br>
+              <input onclick="show_emergency_info()" type="radio" name="emergency_fund" value="false"> No<br>
+            </form>
+          </p>
+          <div id="emergency_info_yes">
+            Amazing! Is your emergency fund making money for you? If not sure,
+            <a target=”_blank” href='https://www.nerdwallet.com/blog/banking/best-high-yield-online-savings-accounts/'>Think about an online savings account</a>
+          </div>
+          <div id="emergency_info_no">
+            You will need to save at least 3 months worth of necessary expenses saved. Click
+            <a href='https://www.nerdwallet.com/blog/banking/banking-basics/life-build-emergency-fund/'>here</a> for more on emergency funds
+          </div>
+          <br>
+          <p>Do you understand where you spend the majority of your money?</p>
+          <p>
+            <form action="">
+              <input onclick="show_monthly_expenses()" id="monthly_expenses" type="radio" name="monthly_expenses" value="true"> Yes<br>
+              <input onclick="show_monthly_expenses()" type="radio" name="monthly_expenses" value="false"> No<br>
+            </form>
+          </p>
+          <div id="monthly_expenses_info_yes">
+            Woot woot, you are far ahead in the game. You are ready to move on to the next step
+          </div>
+          <div id="monthly_expenses_info_no">
+            Understanding where your money goes is an important step to financial independence. Follow the steps below to better understand your monthly expenses.
+          </div>
+          <p align="right"> <a class="button button-primary"  onclick="show_page2()" type="submit">Next Step</a></p>
+        </div>
+        <div id="page2">
+          <h1>Creating a budget</h1>
+          <p class="bigger_font">Think of your money in these three categories: </p> <br>
+          <p> Necessary Expenses <br> Discretionary Expenses <br> Excess Expenses </p>
+          <p align="right"> <a class="button button-primary"  onclick="show_page3()" type="submit">Understanding My Expenses</a></p>
+        </div>
+        <div id="page3">
+          <h1>Creating a budget</h1>
+          <p class="bigger_font"> Necessary Expenses </p>
+          <p>Think of this category as planned expenses you incur every month. Things like:
+            <p class="center_font">
+              <ul>
+                <li> Rent</li>
+                <li> Insurance</li>
+                <li> Debt</li>
+                <li> Utilities</li>
+                <li> Gas</li>
+                <li> Groceries</li>
+              </ul>
+              <p class="bigger_font"> Discretionary Expenses </p>
+              <p>Think of this category as variable non-essential expenses that might be recurring or non-recurring. Things like:
+                <p class="center_font">
+                  <ul>
+                    <li> Clothing</li>
+                    <li> Gym</li>
+                    <li> Entertainment </li>
+                    <li> Restaurant</li>
+                    <li> Hobbies</li>
+                    <li> Personal Care</li>
+                  </ul>
+                </p>
+                <p class="bigger_font"> Excess Expenses </p>
+                <p>Think of this category as luxury expenses that are uncommon. Things like:
+                  <p class="center_font">
+                    <ul>
+                      <li> Charity</li>
+                      <li> Gifts</li>
+                      <li> Travel </li>
+                      <li> Taxis</li>
+                      <li> Luxury Items</li>
+                    </ul>
+                  </p>
+                  <p align="right"> <a class="button button-primary" onclick="show_page4()" type="submit">Next Steps</a></p>
+        </div>
+        <div id="page4">
+          <h1> Company 401k </h1>
+          <p> Are you taking advantage of all company-sponsored accounts?</p>
+          <p>
+            <form action="">
+              <input onclick="show_company_accounts()" id="company_accounts" type="radio" name="sponsored_accounts" value="true"> Yes<br>
+              <input onclick="show_company_accounts()" type="radio" name="sponsored_accounts" value="false"> No<br>
+            </form>
+            <div id="company_accounts_yes">
+              Great job, you are not leaving money on the table. Make sure that you at least contribute the minimum that ensures your company's match. </div>
+            <div id="company_accounts_no">
+              Find out from your company how much they are contributing to your retirement account and add an item in our budget to guarantee your employer's match.Per the IRS, you are allowed to contribute up to $18,500 per year towards your 401K.
+            </div>
+            <div>
+              <p align="right"> <a class="button button-primary" onclick="show_page5()" type="submit">Next Steps</a></p>
+          </p>
+          </div>
+        </div>
+        <div id="page5">
+          <h1>Focus on Your Debt </h1>
+          <p>Determine how much debt you have and how much monthly payment you can afford while <a href='https://www.creditkarma.com/calculators/amortization'>minimizing</a> interest payments. </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="js/script.js"></script>
+</body>
+
+</p>
+
+</html>
